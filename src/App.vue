@@ -23,20 +23,20 @@
           <router-link to="/" class="navbar-item">
             Home
           </router-link>
-          <router-link to="/" class="navbar-item">
+          <router-link to="/about" class="navbar-item">
             About
           </router-link>
-          <router-link to="/" class="navbar-item">
+          <router-link to="/projects" class="navbar-item">
             Projects
           </router-link>
-          <router-link to="/" class="navbar-item">
+          <router-link to="/contact" class="navbar-item">
             Contact
           </router-link>
         </div>
       </div>
     </nav>
 
-    <router-view />
+    <router-view/>
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
