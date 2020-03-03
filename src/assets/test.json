@@ -1,0 +1,32 @@
+
+[{
+  "title": "Moneybiz",
+  "date": "February to August 2018",
+  "snippet": "A banking aggregate financed by Santander and developed out of Santander Campus. I worked on the web version of this app primarily using Angular 5.",
+  "image": "https://lh3.googleusercontent.com/Si3LOavZMMiowSZ23jHsP_PDU8ygU-da8Ypv85AZ1EfMKs7nUnI-4My0BpYw5ahUpmE",
+  "slug": "123"
+}, {
+  "title": "ICEF Website",
+  "date": "November 2018",
+  "snippet": "Played a key role in the overhaul of the company's website. For this project, we worked with CSS, PHP and Wordpress.",
+  "image": "",
+  "slug": "124"
+}, {
+  "title": "Deutsche Bahn Finder",
+  "date": "March 2019",
+  "snippet": "Quick German train station finder built in React.",
+  "image": "",
+  "slug": "125"
+}, {
+  "title": "Relocately - several projects",
+  "date": "April 2019 to January 2020",
+  "snippet": "Worked on a plethora of customer-facing SPAs under the Relocately umbrella.",
+  "image": "",
+  "slug": "126"
+}, {
+  "title": "Five day weather forecast",
+  "date": "January 2020",
+  "snippet": "Built a SPA designed to provide an overview of the weather over the following five days given the user's location.",
+  "image": "",
+  "slug": "127"
+}]
