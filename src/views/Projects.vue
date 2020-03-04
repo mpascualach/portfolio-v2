@@ -23,10 +23,10 @@
 </template>
 
 <script>
-  //import ProjectsService from '@/services/ProjectsService'
+  import ProjectsService from '@/services/ProjectsService'
   import PostCard from '@/components/PostCard'
 
-  import * as mock from '@/assets/test.json'
+  //import * as mock from '@/assets/test.json'
 
   export default {
     name: 'projects',
@@ -42,9 +42,10 @@
       let self = this;
       async function getProjects() {
         try {
-          const response = await mock;
+          const response = await ProjectsService.getProjects();
+          console.log(response);
           self.airtableResponse = response.default;
-          return response;
+
         } catch(err){
           console.log(err);
         }
@@ -55,22 +56,23 @@
       projects() {
         let self = this
         let projectList = []
-        console.log(self.airtableResponse);
+
         for (let i = 0; i < self.airtableResponse.length; i++) {
-          // if (self.airtableResponse[i].fields.Published) {
+          if (self.airtableResponse[i].fields.Published) {
             let project = {
-              title: self.airtableResponse[i].title,
-              date: self.airtableResponse[i].date,
-              // snippet: self.airtableResponse[i].fields.Image[0].url,
-              // slug: self.airtableResponse[i].fields.slug
+              title: self.airtableResponse[i].fields.Title,
+              date: self.airtableResponse[i].fields["Date Published"],
+              snippet: self.airtableResponse[i].fields.Image[0].url,
+              images: self.airtableResponse,
+              slug: self.airtableResponse[i].fields.slug
             }
             projectList.push(project);
-          // }
+          }
         }
         return projectList
       }
     }
-  }
+  };
 
 </script>
 

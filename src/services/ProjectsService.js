@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Axios = axios.create({
-  baseURL: ''
+  baseURL: 'https://api.airtable.com/v0/tblj2RV2dWy5w6rJL/Projects'
 })
 
 Axios.defaults.headers.common = {'Authorization': `Bearer ` + process.env.VUE_APP_AIRTABLEKEY}

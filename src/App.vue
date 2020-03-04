@@ -74,15 +74,26 @@ export default {
 }
 
 nav {
-  background: transparent;
+  background: transparent!important;
 }
+
+a.navbar-item {
+  color: white;
+}
+
 footer {
+  padding: 10px!important;
+  background-color: black!important;
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: transparent;
-  z-index: -1;
 }
+
+.hero {
+  background: transparent!important;
+  text-align: center;
+}
+
 </style>
 
 <style lang="sass">

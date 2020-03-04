@@ -9,7 +9,8 @@
             and am currently working on my UX skills. Expect to see samples here soon.</h2>
           <div class="avatar"></div>
           <h2 class="subtitle is-4 text">If you'd like to learn about some of my projects, don't hesitate to visit the <a>Projects page</a> <br>
-            Or if you'd like to learn about my backstory or potential, click <a>here</a></h2>
+            <!-- Or if you'd like to learn about my backstory or potential, click <a>here</a> -->
+          </h2>
         </div>
       </div>
     </div>
