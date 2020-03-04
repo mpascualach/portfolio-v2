@@ -42,6 +42,7 @@
         <p>
           Built by Miguel Pascual Acheson with Vue.js, Bulma and Airtable.
         </p>
+        <a href="https://www.freepik.com/free-photos-vectors/background">Background by freepik - www.freepik.com</a>
       </div>
     </footer>
   </div>
@@ -67,11 +68,20 @@ export default {
   display: block;
   position: relative;
   padding-bottom: 168px;
+  background: url('./assets/400010-PCV6N5-703.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background: transparent;
 }
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background: transparent;
+  z-index: -1;
 }
 </style>
 
