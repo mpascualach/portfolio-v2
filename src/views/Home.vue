@@ -51,7 +51,7 @@ export default {
   width: 50%;
   text-align: center;
   left: 25%;
-  top: 15%;
+  top: 10%;
 }
 
 </style> 
