@@ -11,10 +11,13 @@
     </section>
     <section>
       <div class="container is-fluid projects-list">
-        <div class="columns is-multiline">
+        <div class="columns is-multiline" v-if="projects">
           <div class="column is-one-third" v-for="project in projects" v-bind:key="project">
             <post-card v-bind="project"></post-card>
           </div>
+        </div>
+        <div v-else>
+          <h1 class="notice">Under construction</h1>  
         </div>
       </div>
     </section>
@@ -23,10 +26,10 @@
 </template>
 
 <script>
-  import ProjectsService from '@/services/ProjectsService'
+  // import ProjectsService from '@/services/ProjectsService'
   import PostCard from '@/components/PostCard'
 
-  //import * as mock from '@/assets/test.json'
+  import * as mock from '@/assets/test.json'
 
   export default {
     name: 'projects',
@@ -42,10 +45,11 @@
       let self = this;
       async function getProjects() {
         try {
-          const response = await ProjectsService.getProjects();
-          console.log(response);
+          // const response = await ProjectsService.getProjects();
+          const response = await mock;
           self.airtableResponse = response.default;
-
+          return mock;
+          
         } catch(err){
           console.log(err);
         }
@@ -60,11 +64,15 @@
         for (let i = 0; i < self.airtableResponse.length; i++) {
           if (self.airtableResponse[i].fields.Published) {
             let project = {
-              title: self.airtableResponse[i].fields.Title,
-              date: self.airtableResponse[i].fields["Date Published"],
-              snippet: self.airtableResponse[i].fields.Image[0].url,
-              images: self.airtableResponse,
-              slug: self.airtableResponse[i].fields.slug
+              // title: self.airtableResponse[i].fields.Title,
+              // date: self.airtableResponse[i].fields["Date Published"],
+              // snippet: self.airtableResponse[i].fields.Image[0].url,
+              // images: self.airtableResponse,
+              // slug: self.airtableResponse[i].fields.slug
+              title: self.airtableResponse[i].title,
+              date: self.airtableResponse[i].date,
+              snippet: self.airtableResponse[i].image,
+              slug: self.airtableResponse.slug
             }
             projectList.push(project);
           }

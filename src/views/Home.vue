@@ -4,12 +4,11 @@
       <div class="">
         <div class="container intro-text">
           <h1 class="title is-1">Hi! I'm Miguel</h1>
-          <h2 class="subtitle is-4 text">A full-stack developer with considerable experience <br>
-            I specialise in building robust user interfaces with data from backend sources
-            and am currently working on my UX skills. Expect to see samples here soon.</h2>
+          <h2 class="subtitle is-4 text">I'm a full-stack developer with considerable experience in user interface design
+            and tweaking as well as backend capabilities and I am currently working on fine-tuning my UX and UI design skills.</h2>
           <div class="avatar"></div>
           <h2 class="subtitle is-4 text">If you'd like to learn about some of my projects, don't hesitate to visit the <a>Projects page</a> <br>
-            <!-- Or if you'd like to learn about my backstory or potential, click <a>here</a> -->
+            And if you'd like to hear about my origin story, <a>click here</a>
           </h2>
         </div>
       </div>
